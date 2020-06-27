@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flex Panels 💪</title>
+  <title>Dezren Mikell</title>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -24,7 +24,7 @@
     }
 
     .panels {
-      min-height: 100vh;
+      min-height: 65vh;
       overflow: hidden;
       display: flex;
     }
@@ -41,13 +41,33 @@
         font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         background 0.2s;
-      font-size: 20px;
+      font-size: 10px;
       background-size: cover;
       background-position: center;
       flex: 1;
       justify-content: center;
       display: flex;
       flex-direction: column;
+    }
+    .dzine {
+      background: cyan;
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      text-align: center;
+    }
+    .bottom{
+      text-align: center;
+    }
+    .profilePic{
+      align-self: right;
+    }
+    .me{
+      width: 200px;
+      height: 200px;
     }
 
     .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -59,7 +79,7 @@
     /* Flex Items */
     .panel > * {
       margin: 0;
-      width: 100%;
+      width: 85%;
       transition: transform 0.5s;
       flex: 1 0 auto;
       display: flex;
@@ -76,53 +96,84 @@
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 2em;
+      font-size: 1em;
     }
     
     .panel p:nth-child(2) {
-      font-size: 4em;
+      font-size: 3em;
     }
 
     .panel.open {
-      flex: 5;
-      font-size: 40px;
+      flex: 3;
+      font-size: 20px;
     }
     
     @media only screen and (max-width: 600px) {
       .panel p {
-        font-size: 1em;
+        font-size: 1.5em;
       }
     }
   </style>
 
-
+  <div class="dzine">
+    <h3>
+      D
+    </h3>
+  </div>
+  <div class="profile">
+    <div>
+      <ul>
+        <li><a href="https://github.com/dezrenmikell">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/dezren-mikell">LinkedIn</a></li>
+    </ul>
+    </div>
+    <div>  
+      <h1>
+        Dezren C. Mikell
+      </h1> 
+      <h3>
+        Full Stack Software Engineer
+      </h3>
+      <p>
+        "I'm the guy for code and a smile!"
+      </p>
+      </div>
+      <div class="profilePic">
+      <img class="me" src="https://i.imgur.com/THpDxHq.jpg" alt="profile picture">
+    </div>
+  </div>
   <div class="panels">
     <div class="panel panel1">
-      <p>Hey</p>
+      <p> </p>
       <p>ABOUT ME</p>
       <p>I've learned to cultivate my problem solving, debugging, and leadership skills as a former Teacher’s Assistant of Computer Science and from my time in the military. These skills have proven useful in jobs since then and have often led to promotions and added responsibility.</p>
     </div>
     <div class="panel panel2">
-      <p>Give</p>
+      <p> </p>
       <p>PROJECTS</p>
       <p>Throughout my time in General Assembly's Bootcamp, we did 4 solo projects, a couple of teen projects, and in my free time, I've been working on Wes Bos' JavaScript 30.</p>
     </div>
     <div class="panel panel3">
-      <p>Experience</p>
+      <p> </p>
       <p>RESUME</p>
       <p>Today</p>
     </div>
     <div class="panel panel4">
-      <p>Give</p>
+      <p> </p>
       <p>LINKS</p>
       <p>You can</p>
     </div>
     <div class="panel panel5">
-      <p>Life</p>
+      <p> </p>
       <p>CONTACT INFO</p>
       <p>If interested in contacting me you can email, contact me on LinkedIn, or give me a call(phone number is on my resume.)
         Email: dezrenmikell@gmail.com/p>
     </div>
+  </div>
+  <div class="bottom">
+    <h4>
+      Thank you for viewing!
+    </h4>
   </div>
 
   <script>
